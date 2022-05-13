@@ -121,7 +121,7 @@ def main():
                 if actors.count(i) > 2:
                     result.append(i)
         result = set(result)
-        print(get_actors(name_1='Rose McIver', name_2='Ben Lamb'))
+        print(result)
 
     def get_films(type_film, release_year, genre):
         query = f"""
