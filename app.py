@@ -27,6 +27,8 @@ def search_by_title(title):
                 ORDER BY release_year DESC
                 LIMIT 1
             """
+    if not title in dict():
+        return jsonify(['Пусто'])
     response = dict(db_connect(query)[0])
 
     return jsonify(response)
